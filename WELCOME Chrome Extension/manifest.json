@@ -1,0 +1,42 @@
+{
+    "name": "WELCOME",
+    "description": "Injection of the word welcome",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    
+    "content_scripts":[
+        {
+   "matches": ["https://example.com/*"],
+   "js": ["js/contentScript.js"],
+   "css":["css/contentScript.css"],
+   "run_at": "document_end"
+   }
+],
+    
+"action": {
+    
+    "default_icon": {
+        "16": "images/16.png",
+        "32": "images/32.png",
+        "48": "images/48.png",
+        "128":"images/128.png"
+    }
+  },
+    "icons": {
+        "16": "images/16.png",
+        "32": "images/32.png",
+        "48": "images/48.png",
+        "128":"images/128.png"
+       },
+
+       
+       "permissions": [
+        "scripting"
+    ]
+    
+}
+
+
+   
+
